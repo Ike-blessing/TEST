@@ -1,0 +1,135 @@
+
+body{
+    margin: 0px;   
+ }
+    
+ h1{
+     width: 400px;
+     height: 80px;
+     color: rgb(150, 27, 27);
+     font-family: fantasy;
+     font-size: 55px;
+     font-weight: bolder;
+     margin-top: 10px;
+     text-align: center;
+     border-right: 5px solid  rgb(12, 12, 131);
+     border-bottom: 5px solid rgb(12, 12, 131);
+     box-shadow: 3px 3px 4px rgb(1, 1, 31);
+ }
+
+.container{
+   display: grid;
+   grid-template-columns: 18% 18% 18% 18%;
+   justify-content: center;
+   row-gap: 10px;
+   column-gap: 5px;
+}
+
+img{
+    width: 95%;
+    height: 70%;
+}
+
+p{
+    width: 5em;
+    height: 2em;
+    color: blue;
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 40px 40px 30px; 
+    padding: 0.2em 0.2em 0em 0.2em;
+    border-bottom:1px solid rgb(63, 8, 8);
+    border-right:1px solid  rgb(63, 8, 8);
+    box-shadow: 0px 3px 3px rgb(92, 8, 8);
+    transition: all 1s;  
+}
+
+p:hover{
+    transform: scale(1.1);
+}   
+
+@media screen and (max-width: 1000px) {
+    body{
+        margin: 0px;
+        width: 100%
+        }
+    main{
+        width: 100%;
+    }
+    section{
+        padding-bottom: 60px;
+        margin: 0px;
+    }
+    h1{
+        width: 300px;
+        height: 60px;
+        font-size: 35px;
+        padding: 5px;
+        margin-top: 10px;
+        }        
+    .container{
+        width: 100%;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 210px 210px 210px;
+        justify-content: center;
+        column-gap: 5px;
+    }
+    img{
+        width: 200px;
+        height: 210px;
+    }
+    p{
+        width: 4em;
+        height: 1.5em;
+        font-weight: bold;
+        text-align: center;  
+    }
+    
+    p:hover{
+        transform: scale(1.1);
+    }  
+}
+
+
+@media screen and (max-width: 550px) {
+    body{
+        margin: 0px;
+        width: 100%
+        }
+    main{
+        width: 100%;
+    }
+    section{
+        padding-bottom: 50px;
+        margin: 0px;
+    }
+    h1{
+        width: 100px;
+        height: 30px;
+        font-size: 20px;
+        padding: 5px;
+        margin-top: 10px;
+        }        
+    .container{
+        width: 100%;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        justify-content: center;
+        column-gap: 5px;
+    }
+    img{
+        width: 95px;
+        height: 110px;
+    }
+    p{
+        width: 4em;
+        height: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        margin: 0px;  
+    }
+}
+
